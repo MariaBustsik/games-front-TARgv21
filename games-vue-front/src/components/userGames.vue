@@ -8,7 +8,10 @@
 
 const API_URL = "http://localhost:8080/players"
 
+
 import gameList from "./gameList.vue"
+
+
 
 export default {
     components:{
