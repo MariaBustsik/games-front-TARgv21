@@ -1,23 +1,20 @@
 <template>
-    
-    <!-- <game-details :game="game"></game-details> -->
-    <!-- <game-list :games="games" @deleted="removeItem"></game-list> -->
-    <user-games :playerId="playerId"> </user-games>
+    <game-details :game="game"></game-details>
+    <game-list :games="games" @deleted="removeItem"></game-list>
+    <game-form @submit="fetchData"></game-form>
 </template>
 <script>
 const API_URL = "http://localhost:8080/games"
-
-
-import gameList from "./components/gameList.vue"
-
-
-
-export default {
-    components:{
-        
-        gameList
-    },
-    data() {
+import gameDetails from "../components/gameDetails.vue"
+import gameList from "../components/gameList.vue"
+import gameForm from  "../components/gameForm.vue"
+    export default{
+        components:{
+            gameDetails,
+            gameList,
+            gameForm,
+        },
+        data() {
         return {
             
             id:0,
