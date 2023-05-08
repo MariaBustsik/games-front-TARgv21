@@ -105,18 +105,5 @@ export default {
 }
 </script>
 <style>
-table,
-th,
-td {
-  border: 1px solid black;
-}
-.text-danger {
-  color:red;
-}
-.button-danger {
-  background-color: red;
-}
-.button-safe {
-  background-color: green;
-}
+
 </style>

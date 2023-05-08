@@ -6,7 +6,7 @@
 const API_URL = "http://localhost:8080/games"
 
 
-//import userGames from "../userGames.vue"
+import userGames from "../components/userGames.vue"
 import gameDetails from "../components/gameDetails.vue"
 import gameList from "../components/gameList.vue"
 import gameForm from  "../components/gameForm.vue"
